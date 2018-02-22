@@ -1,0 +1,78 @@
+/* The :global tag is specific to CSS Modules. See more (even how to disable them!) at https://github.com/lampix-org/app-boilerplate */
+
+:global body {
+  /*
+  Black is automatically interpreted as transparent by the device, but not by the simulator.
+  This allows for contrast during development, and a neutral background.
+  This also means that light colors usually display poorly, so
+  you should consider colors that stand out.
+  */
+  background: black;
+
+  /*
+  Browser compatibility shouldn't be an issue.
+  Lampix can render the same things as Chrome 57 (which includes Custom Elements and Shadow DOM v1).
+  */
+  width: 100vw;
+  height: 100vh;
+}
+
+/* rect1 */
+:global .white-one {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+}
+
+/* rect2 */
+:global .gray-one {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid gray;
+}
+
+/* toggleButton */
+:global .big-bad-button {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+}
+
+/* rect3 */
+:global .green-one {
+  position: absolute;
+  top: 50px;
+  left: 500px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid green;
+  display: none;
+}
+
+/* rect4 */
+:global .fuchsia-one {
+  position: absolute;
+  top: 200px;
+  left: 500px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid fuchsia;
+  display: none;
+}
+
+/*
+IMPORTANT:
+
+Note how these reflect the areas Lampix watches pixel by pixel.
+This is because the UI and backend are logically unaware of each other.
+*/
+

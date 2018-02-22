@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 const baseConfig = require('./webpack.base');
 require('dotenv').config();
@@ -33,6 +34,9 @@ module.exports = baseConfig({
     symlinks: false
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('development')
+    }),
     new HtmlWebpackPlugin({
       template: path.join(cwd, 'src', 'index.html')
     })
