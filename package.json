@@ -1,0 +1,47 @@
+{
+  "name": "lampix-app-starter",
+  "version": "0.1.0",
+  "description": "Boilerplate for starting Lampix apps",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config internals/webpack.prod.js --progress --colors",
+    "start": "webpack-dev-server -d --inline --hot --config internals/webpack.dev.js",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix --ignore-pattern internals/",
+      "git add"
+    ]
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@lampix/core": "^0.1.2",
+    "@lampix/state": "^0.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.40",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^8.0.0-beta.0",
+    "clean-webpack-plugin": "^0.1.18",
+    "css-loader": "^0.28.9",
+    "dotenv": "^5.0.0",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^2.30.1",
+    "husky": "^0.14.3",
+    "image-webpack-loader": "^4.1.0",
+    "lint-staged": "^6.1.0",
+    "style-loader": "^0.20.1",
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
