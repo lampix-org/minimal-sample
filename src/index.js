@@ -173,3 +173,15 @@ core.registerSimpleClassifier([
     stateManager.changeToState('example-state1');
   }
 });
+
+core.getLampixInfo((lampixInfo) => console.log(lampixInfo));
+core.transformCoordinates({
+  posX: 50,
+  posY: 50,
+  width: 60,
+  height: 70,
+  camera: true
+}, (rect) => {
+  console.log(rect);
+  console.log(typeof rect);
+});
