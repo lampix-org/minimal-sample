@@ -1,11 +1,11 @@
 {
-  "name": "lampix-app-starter",
-  "displayName": "Lampix App Starter",
-  "version": "1.1.0",
-  "description": "Boilerplate for starting Lampix apps",
+  "name": "minimal-sample",
+  "displayName": "Minimal Sample",
+  "version": "1.0.0",
+  "description": "Counter app showcasing the usage of a @lampix/dom button",
   "author": {
-    "email": "your@email.com",
-    "name": "Your name"
+    "email": "dbalaban@lampix.co",
+    "name": "Dan Balaban"
   },
   "lampixConfig": {
     "lampixVersion": ">= 2.0.0",
@@ -27,12 +27,15 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@lampix/core": "^1.0.0-beta.0"
+    "@babel/runtime": "^7.1.5",
+    "@lampix/core": "^1.0.0-beta.3",
+    "@lampix/dom": "^1.0.0-beta.4"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "babel-eslint": "^8.2.6",
     "babel-loader": "^8.0.4",
