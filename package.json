@@ -1,6 +1,6 @@
 {
-  "name": "minimal-sample",
-  "displayName": "Minimal Sample",
+  "name": "simple-counter",
+  "displayName": "Simple Counter",
   "version": "1.0.0",
   "description": "Counter app showcasing the usage of a @lampix/dom button",
   "author": {
