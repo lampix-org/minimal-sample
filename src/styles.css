@@ -1,5 +1,6 @@
 body {
   font-family: Sans-Serif;
+  color: white;
 }
 
 .counter {
@@ -9,5 +10,4 @@ body {
   transform: translate(-50%, -50%);
 
   font-size: 3em;
-  color: white;
 }
